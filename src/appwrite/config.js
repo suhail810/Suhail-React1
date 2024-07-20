@@ -12,7 +12,7 @@ export class Servive{
         this.client
         .setEndPoint(conf.appwriteurl)
         .setProjectId(conf.appwriteProjectId)
-        this.databases = new Databases(this.client)
+        this.databases = new databases(this.client)
         this.storage = new Storage(this.client)
     }
     async createPost({title,slug,content,featuredImage,status,userId}) {
